@@ -26,3 +26,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //微信
 Route::get('/index','Admin\WeixinController@index');
+//access_token
+Route::get('/token','Admin\WeixinController@token');
