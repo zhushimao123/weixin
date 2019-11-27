@@ -24,3 +24,5 @@ Route::group(['prefix'=> 'admin','namespace'=> 'Admin'],function (){
 //auth
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+//微信
+Route::get('/index','Admin\WeixinController@index');
